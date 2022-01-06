@@ -1,0 +1,36 @@
+def get_tax_status():
+    exempt = raw_input("Is the user tax exempt? Enter y/n.")
+    if exempt == "y" or "Y":
+        return "y" 
+    else:
+        return "n"
+
+def get_items():
+    Total_value = 0
+    item_purchase = raw_input("Item Price: ")
+    items = []
+    while True:
+        list = raw_input("Item Price: ")
+        if list == "": 
+            break
+    
+def sum_items():
+    items = [float(i) for i in n]
+    for i in range(int(item_purchased)):
+        Total_value = Total_value + val
+        return Total_value
+    tax = float(Total_value) * .05
+    newamount = float(Total_value) + float(tax)
+    if exempt == "y" or "Y":
+        print("Total: ", Total_value)
+    else:
+        print("Subtotal: ", Total_value)
+        print("Tax rate: ", tax)
+        print("Total: ", newamount)
+    
+def print_report(tax_rate,subtotal):
+    pass # add code for this function here
+
+exempt = get_tax_status()
+items = get_items()
+summation = sum_items()
